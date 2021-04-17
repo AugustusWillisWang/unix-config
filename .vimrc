@@ -8,6 +8,7 @@
 " set ignorecase 
 set cursorline
 set number
+set relativenumber
 set scrolloff=3
 set hlsearch
 set incsearch
@@ -39,7 +40,6 @@ set selectmode=mouse,key
 set shortmess=atI
 set report=0
 set noerrorbells
-set fillchars=vert:\ ,stl:\ ,stlnc:\ 
 
 set showmatch
 set matchtime=10
@@ -50,9 +50,9 @@ set formatoptions=tcrqn
 set autoindent
 set smartindent
 set cindent
-set tabstop=4
-set softtabstop=4
-set shiftwidth=4
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" 
 " Custom Settings 
@@ -78,3 +78,5 @@ map <C-n> :tabnew<CR>
 map <C-j> :tabp<CR>
 map <C-k> :tabn<CR>
 map <C-e> :!
+
+inoremap <C-a> <ESC>
